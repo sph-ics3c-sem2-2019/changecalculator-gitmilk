@@ -7,10 +7,37 @@
 # If amount is below the cost, say how much more they owe.
 cost=float(input("How much does the item cost?"))
 amount=float (input("What's the payment?"))
-result=cost-amount
+change=amount-cost
+print ("Your change is", change)
+hundred=change//100
+change=change%100
+print (hundred, " x $100")
+fifty=change//50
+change=change%50
+print (fifty, " x $50")
+twenty=change//20
+change=change%20
+print (twenty, " x $20")
+ten=change//10
+change=change%10
+print (ten, " x $10")
+five=change//5
+change=change%5
+print (five, " x $5")
+toonie=change//2
+change=change%2
+print (toonie, " x $2")
+one=change//1
+change=change%1
+print (one, " x $1")
+quarter=change//0.25
+change=change%0.25
+print (quarter, " x $0.25")
+dime=change//0.10
+change=change%0.10
+print (dime, " x $0.10")
+nickle=change//0.05
+change=change%0.05
+print (nickle, " x $0.05")
 
-
-
-
-print ("you owe "+str(result))
 
